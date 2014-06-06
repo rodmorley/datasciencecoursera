@@ -1,0 +1,10 @@
+##
+## discount factor calculator - function to calc discount factors to present value future cash flows.
+##
+## function which takes (interest) rate & number of years
+##
+dcf <- function(rate,years){
+  year_count <- 1:years
+  dcf <- 1 / (1+rate)^year_count
+  dcf
+}
